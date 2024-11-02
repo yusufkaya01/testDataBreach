@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"  # Map port 80 of the container to port 80 of the host
+    volumes:
+      - ./assets:/usr/share/nginx/html/assets  # Mount the assets directory
+      - ./css:/usr/share/nginx/html/css        # Mount the css directory
+      - ./js:/usr/share/nginx/html/js          # Mount the js directory
+      - ./about-us.html:/usr/share/nginx/html/about-us.html  # Mount the about us page
+      - ./index.html:/usr/share/nginx/html/index.html        # Mount the index page
+      - ./payment.html:/usr/share/nginx/html/payment.html    # Mount the payment page
+      - ./services.html:/usr/share/nginx/html/services.html  # Mount the services page
+      - ./subscriptions.html:/usr/share/nginx/html/subscriptions.html  # Mount the subscriptions page
+    restart: always  # Always restart the container if it stops

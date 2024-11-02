@@ -244,6 +244,25 @@ body {
     text-align: center; /* Center text in the paragraph */
 }
 
+.price {
+    font-size: 1.2em; /* Slightly larger font size */
+    color: #007BFF; /* Bootstrap primary color for emphasis */
+    margin-top: 10px; /* Add some space above the price */
+}
+
+
+.discounted {
+    color: #28a745; /* Green color for the discounted price */
+    font-weight: bold; /* Make it bold */
+}
+
+.original {
+    color: #dc3545; /* Red color for the original price */
+    text-decoration: line-through; /* Strike-through for the original price */
+    margin-left: 10px; /* Add some space between the discounted and original prices */
+}
+
+
 /* Payment Section */
 .payment-section {
     max-width: 400px;
