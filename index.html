@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EraseMyTrace</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="subscriptions.html">Subscriptions</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="assets/images/logo.png" alt="EraseMyTrace Logo" class="logo">
+    </div>
+
+    <!-- User Input Form -->
+    <div class="input-form">
+        <h2>Enter Your Details</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        
+        <button onclick="startSearch()">Search for Information</button>
+    </div>
+
+    <!-- Scanning Animation Container -->
+    <div class="scanning-container" style="display: none;">
+        <div class="scanning-text">Searching for your information...</div>
+        <div class="loading-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+    <!-- Results Section -->
+    <div class="results" style="display: none;">
+        <p id="results-count"></p>
+        <button onclick="window.location.href='payment.html'">Proceed to Payment to Remove Data</button>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact-section" class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" required>
+            
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" required>
+            
+            <label for="contact-message">Message:</label>
+            <textarea id="contact-message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="contact-info">
+            <p>Contact Us: info@erasemytace.com</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 EraseMyTrace. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

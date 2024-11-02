@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - EraseMyTrace</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="subscriptions.html">Subscriptions</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Payment Section -->
+    <div class="payment-section">
+        <h2>Proceed to Payment</h2>
+        <p>Please enter your payment details below:</p>
+        
+        <p class="payment-amount">Total Amount: <strong>$4.99 USD</strong></p>
+        
+        <form id="payment-form">
+            <label for="card-name">Cardholder Name:</label>
+            <input type="text" id="card-name" required>
+
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" required>
+
+            <label for="expiry-date">Expiry Date (MM/YY):</label>
+            <input type="text" id="expiry-date" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" required>
+
+            <button type="submit">Complete Payment</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="contact-info">
+            <p>Contact Us: info@erasemytace.com</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 EraseMyTrace. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
